@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBG"
+    tools:context=".Precos"><![CDATA[
+
+    >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ]]>
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:background="#BBC0DD"
+        android:onClick="Home"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="413dp"
+        android:layout_height="63dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/btn_clientes"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@color/colorBotoes"
+            android:onClick="ClickClientes"
+            android:text="Clientes"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="95dp"
+            android:layout_height="42dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@color/colorBotoes"
+            android:onClick="ClickReservas"
+            android:text="Reservas"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/btn_quartros"
+            android:layout_width="96dp"
+            android:layout_height="42dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@color/colorBotoes"
+            android:onClick="ClickQuartos"
+            android:text="Quartos"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="79dp"
+            android:layout_height="42dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@android:color/holo_blue_dark"
+            android:text="Preços"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Preços"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="126dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="636dp"
+        android:background="@color/colorBotoes"
+        android:onClick="EditarPreco"
+        android:text="Editar Preços"
+        android:textColor="@color/colorBackground"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ListView
+        android:id="@+id/listPlanos"
+        android:layout_width="290dp"
+        android:layout_height="474dp"
+        android:background="#3E4687"
+        android:divider="@color/colorBG"
+        android:dividerHeight="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintVertical_bias="0.219" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

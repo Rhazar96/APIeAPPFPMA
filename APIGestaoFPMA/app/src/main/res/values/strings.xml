@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Gestao FPMA</string>
+
+
+    <string-array name="TiposQuarto">
+    <item>Individual</item>
+    <item>Casal</item>
+    <item>Duplo</item>
+    <item>Triplo</item>
+    <item>Casal e Duplo</item>
+    </string-array>
+
+
+
+    <string-array name="Status">
+        <item>0 - Disponível</item>
+        <item>1 - Ocupado</item>
+    </string-array>
+</resources>
